@@ -1,27 +1,13 @@
-.page.theme_dark {  
-    --text-color: var(--color-lavender-pink);
-    --page-background-image: url("../images/cover-image-dark.png");
-    --rec-decoration-visibility: visible;
-    --rec-decoration-color: var(--color-razzmatazz);
-    --menu-theme-color: var(--color-razzmatazz);
-    --border-hover-color: var(--color-alternative-razzmatazz); 
-    --page-title-color: var(--color-psychedelic-purple);
-    --text-shadow: var(--color-razzmatazz);
-    --title-color: var(--color-black-russian);
-    --background-color: var(--color-razzmatazz);
-}
-
-@media (prefers-color-scheme: dark) {  
-    :root {
-     --text-color: var(--color-lavender-pink);
-     --page-background-image: url("../images/cover-image-dark.png");
-     --rec-decoration-visibility: visible;
-     --rec-decoration-color: var(--color-razzmatazz);
-     --menu-theme-color: var(--color-razzmatazz);
-     --border-hover-color: var(--color-alternative-razzmatazz);
-     --page-title-color: var(--color-psychedelic-purple);
-     --text-shadow: var(--color-razzmatazz);
-     --title-color: var(--color-black-russian);
-     --background-color: var(--color-razzmatazz);
-    } 
+.page.theme_dark {
+  --text-color: var(--color-lavender-pink);
+  --page-background-image: url("../images/cover-image-dark.png");
+  --rec-decoration-visibility: visible;
+  --rec-decoration-color: var(--color-razzmatazz);
+  --menu-theme-color: var(--color-razzmatazz);
+  --border-hover-color: var(--color-alternative-razzmatazz);
+  --page-title-color: var(--color-psychedelic-purple);
+  --text-shadow: var(--color-razzmatazz);
+  --title-color: var(--color-black-russian);
+  --background-color: var(--color-razzmatazz);
+  --section-title-color: var(--color-razzmatazz);
 }

@@ -1,27 +1,29 @@
 .page.theme_light {
-    --text-color: var(--color-black);
-    --page-background-image: url(../images/cover-image-light.png);
-    --rec-decoration-visibility: hidden;
-    --rec-decoration-color: var(--color-black);
-    --menu-theme-color: var(--color-black);
-    --border-hover-color: var(--color-alternative-black); 
-    --page-title-color: var(--color-classic-rose);
-    --text-shadow: var(--color-tea-rose);
-    --title-color: var( --color-black);
-    --background-color: var(--color-tea-rose);
+  --text-color: var(--color-black);
+  --page-background-image: url(../images/cover-image-light.png);
+  --rec-decoration-visibility: hidden;
+  --rec-decoration-color: var(--color-black);
+  --menu-theme-color: var(--color-black);
+  --border-hover-color: var(--color-alternative-black);
+  --page-title-color: var(--color-classic-rose);
+  --text-shadow: var(--color-tea-rose);
+  --title-color: var(--color-black);
+  --background-color: var(--color-tea-rose);
+  --section-title-color: var(--color-black);
 }
 
-@media (prefers-color-scheme: light) {  
-    :root {
+@media (prefers-color-scheme: light) {
+  :root {
     --text-color: var(--color-black);
     --page-background-image: url(../images/cover-image-light.png);
     --rec-decoration-visibility: hidden;
     --rec-decoration-color: var(--color-black);
     --menu-theme-color: var(--color-black);
-    --border-hover-color: var( --color-alternative-black); 
-    --page-title-color: var(--color-psychedelic-purple);
+    --border-hover-color: var(--color-alternative-black);
+    --page-title-color: var(--color-classic-rose);
     --text-shadow: var(--color-tea-rose);
     --title-color: var(--color-black);
     --background-color: var(--color-tea-rose);
-    } 
+    --section-title-color: var(--color-black);
+  }
 }
