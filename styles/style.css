@@ -1,5 +1,4 @@
 .page {
-  position: relative;
   font-family: "IBM Plex mono", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -15,10 +14,11 @@
   display: grid;
   padding: clamp(10px, 0.0286rem + 2.5445vw, 20px);
   min-block-size: 100vh;
+  grid-template-rows: 1fr min-content 1fr;
 }
 
 .header {
-  align-items: start;
+  align-items: center; 
 }
 
 .decorated-zone {
@@ -48,27 +48,29 @@
 }
 
 .rec-decoration {
-  visibility: var(--rec-decoration-visibility);
+  position: absolute;
+  visibility: var(--rec-decor-visibility, visible);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  inset-inline-end: 20px;
+  inset-block-start: 10px;
 }
 
 .rec-decoration::before {
-  position: absolute;
-  inset-inline-end: 38px;
   content: "rec";
-  text-transform: uppercase;
   color: var(--rec-decoration-color);
+  text-transform: uppercase;
 }
 
 .rec-decoration::after {
-  position: absolute;
   content: "";
-  block-size: 9px;
-  inline-size: 9px;
+  display: inline-block;
   border-radius: 50%;
   background-color: var(--rec-decoration-color);
   box-shadow: 0 0 4px 2px var(--rec-decoration-color);
-  inset-inline-end: 19px;
-  inset-block-start: 18px;
+  inline-size: 9px;
+  block-size: 9px;
 }
 
 .header__theme-menu {
@@ -123,32 +125,6 @@
   margin-block: 55px;
 }
 
-.rec-decor {
-  position: absolute;
-  visibility: var(--rec-decor-visibility, visible);
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  inset-inline-end: 20px;
-  inset-block-start: 10px;
-}
-
-.rec-decoration::before {
-  content: "REC";
-  color: var(--rec-decoration-color);
-  line-height: 24px;
-}
-
-.rec-decoration::after {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  background-color: var(--rec-decoration-color);
-  box-shadow: 0 0 4px 2px var(--rec-decoration-color);
-  inline-size: 9px;
-  block-size: 9px;
-}
-
 .page-title-decoration {
   color: var(--page-title-color);
   font-weight: 700;
@@ -189,7 +165,6 @@
 
 .section-text-link {
   text-decoration: none;
-  position: relative;
 }
 
 .text-decoration-item {
@@ -202,7 +177,7 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 2px;
+  height: 1px;
   background: currentColor;
   box-shadow: none;
 }
@@ -332,8 +307,8 @@
 @media screen and (min-width: 1024px) {
   .header__theme-menu {
     justify-self: center;
-    margin-block-start: -62px;
-    margin-block-end: 208px;
+    margin-block-start: 0;
+    align-self: flex-start;
   }
 
   .header__theme-menu-list {
