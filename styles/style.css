@@ -18,7 +18,7 @@
 }
 
 .header {
-  align-items: center; 
+  align-items: center;
 }
 
 .decorated-zone {
@@ -229,7 +229,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  
   .rec-decoration {
     inset-inline-end: 30px;
     inset-block-start: 20px;
@@ -302,12 +301,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-  
-  .rec-decoration {
-    inset-inline-end: 30px;
-    inset-block-start: 20px;
-  }
-
   .header__theme-menu {
     justify-self: center;
     margin-block-start: 0;
