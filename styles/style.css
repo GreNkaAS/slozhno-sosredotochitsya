@@ -49,7 +49,7 @@
 
 .rec-decoration {
   position: absolute;
-  visibility: var(--rec-decor-visibility, visible);
+  visibility: var(--rec-decoration-visibility);
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -229,13 +229,10 @@
 }
 
 @media screen and (min-width: 768px) {
-  .rec-decoration::before {
-    inset-inline-end: 49px;
-  }
-
-  .rec-decoration::after {
-    inset-inline-end: 29px;
-    inset-block-start: 29px;
+  
+  .rec-decoration {
+    inset-inline-end: 30px;
+    inset-block-start: 20px;
   }
 
   .decorated-zone::before {
@@ -305,6 +302,12 @@
 }
 
 @media screen and (min-width: 1024px) {
+  
+  .rec-decoration {
+    inset-inline-end: 30px;
+    inset-block-start: 20px;
+  }
+
   .header__theme-menu {
     justify-self: center;
     margin-block-start: 0;
