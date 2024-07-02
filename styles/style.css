@@ -33,6 +33,7 @@
   gap: 10px;
   color: var(--rec-decoration-color);
   font-size: 18px;
+  visibility: var(--rec-decoration-visibility);
 }
 
 .rec-decoration:after {
